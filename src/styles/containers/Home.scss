@@ -1,0 +1,49 @@
+@import '../common/constants.scss';
+@import '../common/constants.scss';
+@import '../settings';
+@import '../common/mixins';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+}
+
+h3 {
+  color: $light-grey-3;
+  font-size: 2rem;
+  font-style: italic;
+  margin: 0 0 3rem 3rem;
+  width: 100vw;
+  @media screen and (max-width: $breakpoints-small) {
+    font-size: 1em;
+  }
+}
+
+h2 {
+  color: $light-grey-3;
+  padding: 0 3rem;
+  font-size: 1.6rem;
+  @media screen and (max-width: $breakpoints-small) {
+    font-size: 1.3em;
+  }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+.transfer-btn {
+    padding: 1em;
+    font-weight: $bold;
+    background-color: $status-new;
+    color: $light-grey-1;
+    justify-self: end;
+    border: none;
+    cursor: pointer;
+}

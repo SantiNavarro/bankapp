@@ -1,102 +1,102 @@
 {
-    "env": {
-      "browser": true,
-      "es2021": true
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended",
+    "airbnb",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-      "plugin:react/recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:jest/recommended",
-      "plugin:prettier/recommended",
-      "plugin:react/jsx-runtime",
-      "plugin:jsx-a11y/recommended",
-      "airbnb",
-      "airbnb-typescript"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "tsconfig.json"
+  },
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "jest", "jsx-a11y", "prettier"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-undef": "off"
       },
-      "ecmaVersion": "latest",
-      "sourceType": "module",
-      "project": "tsconfig.json"
-    },
-    "plugins": ["react", "@typescript-eslint", "react-hooks", "jest", "jsx-a11y"],
-    "overrides": [
-      {
-        "files": ["*.ts", "*.tsx"],
-        "rules": {
-          "no-undef": "off"
-        },
-        "parserOptions": {
-          "project": ["./tsconfig.json"] // Specify it only for TypeScript files
-        }
-      }
-    ],
-    "rules": {
-      "no-useless-escape": "off",
-      "implicit-arrow-linebreak": "off",
-      "arrow-body-style": "off",
-      "no-unused-vars": "warn",
-      "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
-      "import/no-extraneous-dependencies": [
-        "warn",
-        { "devDependencies": ["**/*.test.tsx", "**/setupTests.ts"] }
-      ],
-      "import/extensions": [
-        "warn",
-        "ignorePackages",
-        {
-          "ts": "never",
-          "tsx": "never"
-        }
-      ],
-      "no-shadow": "off",
-      "@typescript-eslint/no-shadow": ["warn"],
-      "max-len": ["warn", { "code": 110 }],
-      "react-hooks/rules-of-hooks": "warn",
-      "react-hooks/exhaustive-deps": "warn",
-      "no-restricted-imports": [
-        "warn",
-        {
-          "paths": [
-            {
-              "name": "react",
-              "importNames": ["default"]
-            }
-          ]
-        }
-      ],
-      "react/require-default-props": "off",
-      "react/function-component-definition": [
-        "warn",
-        {
-          "namedComponents": "arrow-function",
-          "unnamedComponents": "arrow-function"
-        }
-      ],
-      "object-curly-newline": "off",
-      "arrow-parens": ["warn", "as-needed"],
-      "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off",
-      "comma-dangle": "off",
-      "@typescript-eslint/comma-dangle": [
-        "warn",
-        {
-          "arrays": "always-multiline",
-          "exports": "always-multiline",
-          "functions": "never",
-          "imports": "always-multiline",
-          "objects": "always-multiline",
-          "enums": "always-multiline"
-        }
-      ]
-    },
-    "settings": {
-      "import/resolver": {
-        "typescript": {}
+      "parserOptions": {
+        "project": ["./tsconfig.json"] // Specify it only for TypeScript files
       }
     }
+  ],
+  "rules": {
+    "no-useless-escape": "off",
+    "implicit-arrow-linebreak": "off",
+    "arrow-body-style": "off",
+    "no-unused-vars": "warn",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+    "import/no-extraneous-dependencies": [
+      "warn",
+      { "devDependencies": ["**/*.test.tsx", "**/setupTests.ts"] }
+    ],
+    "import/extensions": [
+      "warn",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["warn"],
+    "max-len": ["warn", { "code": 110 }],
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-restricted-imports": [
+      "warn",
+      {
+        "paths": [
+          {
+            "name": "react",
+            "importNames": ["default"]
+          }
+        ]
+      }
+    ],
+    "react/require-default-props": "off",
+    "react/function-component-definition": [
+      "warn",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "object-curly-newline": "off",
+    "arrow-parens": ["warn", "as-needed"],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": [
+      "warn",
+      {
+        "arrays": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never",
+        "imports": "always-multiline",
+        "objects": "always-multiline",
+        "enums": "always-multiline"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
   }
-  
+}

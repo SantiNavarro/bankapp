@@ -1,0 +1,34 @@
+@import '../common/constants.scss';
+@import '../common/constants.scss';
+@import '../settings';
+@import '../common/mixins';
+
+.accounts-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px violet solid;
+  padding: 1rem;
+  width: 90vw;
+  th {
+    font-size: 2em;
+    background: -webkit-linear-gradient(#822, rgb(122, 167, 17));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media screen and (max-width: $breakpoints-small) {
+      font-size: 1em;
+    }
+  }
+  tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+  }
+  td {
+  }
+}

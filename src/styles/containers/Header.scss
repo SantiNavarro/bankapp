@@ -1,0 +1,36 @@
+@import '../common/constants.scss';
+
+.header {
+    color: $light-grey-3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $roboto;
+    * {
+        margin: 2em;
+    }
+    .logout-btn {
+        padding: 1em;
+        font-weight: $bold;
+        background-color: $status-new;
+        color: $light-grey-1;
+        justify-self: end;
+        border: none;
+        cursor: pointer;
+       
+    }
+    .logout-btn-hidden {
+        @extend .logout-btn;
+        visibility: hidden;
+    }
+    .logo {
+        background-image: url(../../assets/bankLogo.png);
+        height: 3rem;
+        width: 3rem;
+        border: none;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}  
