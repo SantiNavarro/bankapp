@@ -18,6 +18,11 @@ The features are:
 
 All requests are made to a mock API at: https://my-json-server.typicode.com/SantiNavarro/myjsonserver-bank 
 
+WIP: There are Dockerfile and Docker-compose files, with basic steps but I need to update the ESLINT config and actions in order to pass the linter and start up the container correctly. For now the start of the app goes with 'npm start'.
+
+TODO:
+  - Add more documentation, tests and reuse of sass mixins.
+  
 ## Available Scripts
 
 In the project directory, you can run:
