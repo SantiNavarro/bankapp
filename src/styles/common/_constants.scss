@@ -1,0 +1,58 @@
+// COLORS
+$grey: #e5e5e5;
+$light-grey: #ffffff80;
+$light-grey-1: #ebedf2;
+$light-grey-2: #979798;
+$light-grey-3: #ededed;
+$light-grey-4: #f5f5f5;
+$light-grey-5: #999;
+$light-grey-6: #eeecf1;
+
+$dark-grey-1: #e0e0e0;
+$dark-grey-2: #636363;
+
+$dark-white: #ffffff0d;
+
+$black: #000;
+$black-soft: #00031a;
+$white: #fff;
+$status-restored: #559f21;
+$status-new: #2751b9;
+$input-background-color: transparent;
+$input-text-color: $light-grey-2;
+
+$orange-1: #f16500;
+$red-1: red;
+$red-2: #f10;
+
+$yellow-1: #f1af03;
+
+$orange-1-background: rgba(241, 101, 0, 0.1);
+
+$loading-indicator-color: #80979797;
+
+$organization-stucture-background-color: rgba(69, 65, 78, 0.08);
+$modal-background: rgba(0, 0, 0, 0.2);
+
+$clr-primary: $white;
+$clr-secondary: $yellow-1;
+$clr-accent: #e5389b;
+$clr-neutral-light: #efefef;
+$clr-neutral-dark: #323232;
+
+$simple-gradient: $clr-primary, $clr-secondary;
+$complex-gradient: $clr-primary, $clr-secondary, $clr-accent;
+
+$scheme-default: $clr-neutral-light, $clr-primary;
+$scheme-secondary: $clr-neutral-dark, $clr-secondary;
+$scheme-accent-gradient: $clr-neutral-dark, $complex-gradient;
+$scheme-simple-gradient: $clr-neutral-dark, $simple-gradient;
+
+// FONTS
+$roboto: 'Roboto', sans-serif;
+
+// FONT WEIGHTS
+$light: 300;
+$normal: 400;
+$semi-bold: 500;
+$bold: 700;

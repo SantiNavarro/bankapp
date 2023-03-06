@@ -1,0 +1,32 @@
+@import './constants';
+
+.paragraph {
+  margin: 0.8em 0 0.3em 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #00031a;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.paragraph-secondary {
+    color: #076CE0;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

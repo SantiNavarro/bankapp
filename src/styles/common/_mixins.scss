@@ -1,0 +1,14 @@
+@use 'sass:list';
+@import '../common/constants.scss';
+@import '../settings';
+
+@mixin color-scheme($text, $bg) {
+    // if we have a single bg color, then set a background-color
+    // and if we have multiple bg colors, set a gradient
+    @if list.length($bg) == 1 {
+      background-color: $bg;
+    } @else {
+      background-image: linear-gradient(to top left, $bg);
+    }
+    color: $text;
+};
