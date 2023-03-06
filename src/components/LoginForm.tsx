@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useMutation } from 'react-query';
-import { useNavigate } from 'react-router-dom';
 import axios, { AxiosResponse } from 'axios';
+import { useNavigate } from 'react-router-dom';
 import '../styles/containers/LoginForm.scss';
 import '../styles/containers/Loader.scss';
 

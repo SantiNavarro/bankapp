@@ -1,0 +1,23 @@
+@import '../common/constants.scss';
+
+.actions-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.cta-button {
+    padding: 1em;
+    font-weight: $bold;
+    background-color: $status-new;
+    color: $light-grey-1;
+    justify-self: end;
+    border: none;
+    cursor: pointer;
+}
+.cta-button-cancel {
+   @extend .cta-button;
+   background-color: $red-2;
+
+}

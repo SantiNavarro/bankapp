@@ -24,6 +24,7 @@ const Header = () => {
         onClick={redirectToHome}
         type="submit"
       />
+      {token ? <h3>DLABS Bank</h3> : <h3>Welcome to DLABS Bank</h3>}
       <button
         type="submit"
         onClick={handleLogout}
