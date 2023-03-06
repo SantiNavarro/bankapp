@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# Welcome to DLabs Bank App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app was developed with the following tools:
+- ReactJS
+- SASS
+- React-router-dom
+- Axios
+
+It also contains rules for handling Github Actions workflows, and its deployed with Vercel at: https://bankapp-zeta.vercel.app/
+
+The features are:
+- Login(mocked API, insert any credentials)
+- Listing of user accounts
+- Creation of Transfer to another account
+- Protected routes
+- Conversion of currencies
+- Addition of Auth token on protected API endpoints with Login retrieved token
+
+All requests are made to a mock API at: https://my-json-server.typicode.com/SantiNavarro/myjsonserver-bank 
 
 ## Available Scripts
 
